@@ -1,34 +1,36 @@
 <?php
 
+$key = 'widget_map_cta';
+
 $widgetplacement = self::$config['tab_placement'];
 
 $widget_config = array (
-  'key' => 'widget_map_cta',
+  'key' => $key,
   'name' => 'map-cta',
   'label' => 'Map CTA',
   'display' => 'row',
   'sub_fields' => array (
     array (
-      'key' => 'map_cta_basic_details_tab',
+      'key' => $key . '_basic_details_tab',
       'label' => 'Basic Details',
       'type' => 'tab',
       'placement' => $widgetplacement,
     ),
     array (
-      'key' => 'widget_map_cta_title',
+      'key' => $key . '_title',
       'label' => 'Title',
       'name' => 'title',
       'type' => 'text',
       'required' => 1,
     ),
     array (
-      'key' => 'widget_map_cta_sell',
+      'key' => $key . '_sell',
       'label' => 'Sell',
       'name' => 'sell',
       'type' => 'text',
     ),
     array (
-      'key' => 'widget_map_cta_link',
+      'key' => $key . '_link',
       'label' => 'Link',
       'name' => 'link',
       'type' => 'url',
@@ -36,7 +38,7 @@ $widget_config = array (
       'instructions' => 'Where does the button link to? (e.g. /map/venue)'
     ),
     array (
-      'key' => 'widget_map_cta_link_text',
+      'key' => $key . '_link_text',
       'label' => 'Link text',
       'name' => 'link_text',
       'type' => 'text',
@@ -44,7 +46,7 @@ $widget_config = array (
       'instructions' => 'The text within the button'
     ),
     array (
-      'key' => 'widget_map_cta_image',
+      'key' => $key . '_image',
       'label' => 'Image',
       'name' => 'image',
       'type' => 'image',
@@ -52,7 +54,7 @@ $widget_config = array (
       'instructions' => 'The map image'
     ),
     array (
-      'key' => 'map_cta_advanced_details_tab',
+      'key' => $key . '_advanced_details_tab',
       'label' => 'Advanced Details',
       'type' => 'tab',
       'placement' => $widgetplacement,
